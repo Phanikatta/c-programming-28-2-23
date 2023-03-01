@@ -1,0 +1,16 @@
+//To print the given pattern.....?
+#include<stdio.h>
+int main()
+{
+	int i,j,k,l;
+	printf("Enter the rows:");
+	scanf("%d",&k);
+	for(i=1;i<=k;i++)
+	{	
+	for(j=k;j>i;j--)
+		printf(" ");			
+		for(j=1;j<=i;j++)
+		 printf("* ");
+		printf("\n");
+	}
+}
