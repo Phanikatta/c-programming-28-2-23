@@ -1,0 +1,19 @@
+//To print the armstrong numbers in the given range
+#include<stdio.h>
+int main()
+{
+	int n,i,j,r,sum;
+	printf("Enter the range:");
+	scanf("%d",&n);
+	for(i=0;i<=n;i++)
+	{
+		sum=0;
+		for(j=i;j>0;j/=10)
+		{
+			r=j%10;
+			sum=sum+r*r*r;
+		}
+		if(sum==i)
+		printf("%d ",i);
+	}
+}
